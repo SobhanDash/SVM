@@ -1,0 +1,19 @@
+A support vector machine(SVM) works by dividing data into multiple classes using something called a hyper-plane.
+
+A hyper plane is a fancy word for something that is straight that can divide data points.
+
+When we create a hyper-plane we need to do as follows: We must pick two points that are known as our support vectors.
+These points must be the two closest points to the hyper-plane and their distance from the hyper-plane must be identical.
+
+We need a margin to seperate the data points. The margin is the distance that separates all of the points in our test data.
+Typically the greater our margin the better our classification will be.
+
+Kernels provide a way for us to create a hyper-plane for data like seen above. We use a kernel to bring our data up to a higher dimension.
+A kernel is  basically a function that takes soem input and gives an output that increases the dimension of the inputs by 1. 
+There are number of famous kernels some of them are linear, polynomial, rbf, sigmoid.
+
+There are 2 types of margin, hard and soft margins.
+Hard margin doesn't allow any data points to exist within the margin and if it does then its not considered as valid.
+Soft margin takes the data point insdide the margin and makes use of it.
+
+The amount of points you allow to exists inside the margin is something we can define as hyper-parameter.
